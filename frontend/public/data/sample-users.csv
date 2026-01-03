@@ -1,0 +1,11 @@
+id,username,email,age,gender,city,created_at,status
+1,zhang_san,zhang_san@example.com,25,male,Beijing,2024-01-01 10:00:00,active
+2,li_si,li_si@example.com,30,female,Shanghai,2024-01-02 11:00:00,active
+3,wang_wu,wang_wu@example.com,28,male,Shenzhen,2024-01-03 12:00:00,active
+4,zhao_liu,zhao_liu@example.com,35,female,Guangzhou,2024-01-04 13:00:00,active
+5,sun_qi,sun_qi@example.com,27,male,Hangzhou,2024-01-05 14:00:00,active
+6,zhou_ba,zhou_ba@example.com,32,female,Chengdu,2024-01-06 15:00:00,active
+7,wu_jiu,wu_jiu@example.com,29,male,Nanjing,2024-01-07 16:00:00,active
+8,zheng_shi,zheng_shi@example.com,26,female,Wuhan,2024-01-08 17:00:00,active
+9,feng_yi,feng_yi@example.com,31,male,Xian,2024-01-09 18:00:00,active
+10,chen_er,chen_er@example.com,24,female,Tianjin,2024-01-10 19:00:00,inactive

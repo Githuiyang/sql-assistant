@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* 深色模式（默认） - 清冷科技感 */
+  :root {
+    /* 背景 - 深黑基调 */
+    --background: 0 0% 4%; /* #0a0a0a */
+    --foreground: 0 0% 91%; /* #e8e8e8 米白 */
+
+    /* 卡片层次 */
+    --card: 0 0% 6%; /* #0f0f0f */
+    --card-foreground: 0 0% 91%;
+    --popover: 0 0% 8%; /* #141414 */
+    --popover-foreground: 0 0% 91%;
+
+    /* 强调色 - 低饱和度蓝灰 */
+    --primary: 203 18% 38%; /* #5a6b7a */
+    --primary-foreground: 0 0% 98%;
+
+    /* 次要色 - 中灰 */
+    --secondary: 210 8% 18%;
+    --secondary-foreground: 0 0% 91%;
+
+    /* 静音色 */
+    --muted: 210 8% 12%;
+    --muted-foreground: 0 0% 55%; /* #8a8a8a */
+
+    /* 强调色 */
+    --accent: 203 18% 38%;
+    --accent-foreground: 0 0% 98%;
+
+    /* 状态色 - 冷色调 */
+    --destructive: 200 15% 45%; /* 冷灰红 */
+    --destructive-foreground: 0 0% 98%;
+    --success: 180 20% 45%; /* 冷青绿 */
+    --warning: 30 15% 55%; /* 冷黄 */
+    --info: 203 25% 50%; /* 冷蓝 */
+
+    /* 边框和输入 - 极细线 */
+    --border: 210 8% 20%;
+    --input: 210 8% 18%;
+    --ring: 203 18% 38%;
+
+    /* 圆角 - 极小 */
+    --radius: 0.125rem; /* 2px */
+  }
+
+  /* 亮色模式 - 清冷科技感 */
+  .light {
+    /* 背景 - 浅灰白 */
+    --background: 0 0% 97%; /* #f7f7f7 */
+    --foreground: 210 8% 15%; /* #222222 深灰黑 */
+
+    /* 卡片层次 */
+    --card: 0 0% 100%; /* #ffffff */
+    --card-foreground: 210 8% 15%;
+    --popover: 0 0% 100%; /* #ffffff */
+    --popover-foreground: 210 8% 15%;
+
+    /* 强调色 - 低饱和度蓝灰（保持一致） */
+    --primary: 203 18% 38%; /* #5a6b7a */
+    --primary-foreground: 0 0% 98%;
+
+    /* 次要色 - 浅灰 */
+    --secondary: 210 8% 95%;
+    --secondary-foreground: 210 8% 15%;
+
+    /* 静音色 */
+    --muted: 210 8% 92%;
+    --muted-foreground: 210 8% 45%; /* #666666 */
+
+    /* 强调色 */
+    --accent: 203 18% 38%;
+    --accent-foreground: 0 0% 98%;
+
+    /* 状态色 - 冷色调 */
+    --destructive: 200 15% 50%; /* 冷灰红 */
+    --destructive-foreground: 0 0% 98%;
+    --success: 180 20% 45%; /* 冷青绿 */
+    --warning: 30 15% 50%; /* 冷黄 */
+    --info: 203 25% 45%; /* 冷蓝 */
+
+    /* 边框和输入 */
+    --border: 210 8% 88%;
+    --input: 210 8% 92%;
+    --ring: 203 18% 38%;
+
+    /* 圆角 */
+    --radius: 0.125rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+
+    /* 背景网格纹理 */
+    background-image:
+      linear-gradient(rgba(90, 107, 122, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(90, 107, 122, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: -1px -1px;
+  }
+
+  /* 亮色模式的网格纹理调整 */
+  .light body {
+    background-image:
+      linear-gradient(rgba(90, 107, 122, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(90, 107, 122, 0.06) 1px, transparent 1px);
+  }
+}
+
+@layer utilities {
+  /* 自定义滚动条 */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(90, 107, 122, 0.3) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(90, 107, 122, 0.3);
+    border-radius: 2px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(90, 107, 122, 0.5);
+  }
+
+  /* 亮色模式滚动条 */
+  .light .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(90, 107, 122, 0.4);
+  }
+
+  .light .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(90, 107, 122, 0.6);
+  }
+
+  /* 网格背景变体 */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(90, 107, 122, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(90, 107, 122, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: -1px -1px;
+  }
+
+  .bg-grid-dense {
+    background-image:
+      linear-gradient(rgba(90, 107, 122, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(90, 107, 122, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: -1px -1px;
+  }
+
+  /* 微妙的发光效果 */
+  .glow-subtle {
+    box-shadow: 0 0 20px rgba(90, 107, 122, 0.1);
+  }
+
+  /* 极简边框 */
+  .border-minimal {
+    border: 1px solid rgba(90, 107, 122, 0.2);
+  }
+
+  /* 亮色模式边框 */
+  .light .border-minimal {
+    border: 1px solid rgba(90, 107, 122, 0.25);
+  }
+
+  /* 背景网格图案（用于 About 页面） */
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(rgba(90, 107, 122, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(90, 107, 122, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}

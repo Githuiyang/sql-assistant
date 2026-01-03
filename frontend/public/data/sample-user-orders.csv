@@ -1,0 +1,11 @@
+id,username,email,total_orders,total_spent
+1,zhang_san,zhang_san@example.com,3,2199.97
+2,li_si,li_si@example.com,3,1699.96
+3,wang_wu,wang_wu@example.com,2,1099.98
+4,zhao_liu,zhao_liu@example.com,1,899.99
+5,sun_qi,sun_qi@example.com,1,499.99
+6,zhou_ba,zhou_ba@example.com,1,349.99
+7,wu_jiu,wu_jiu@example.com,1,549.99
+8,zheng_shi,zheng_shi@example.com,1,999.98
+9,feng_yi,feng_yi@example.com,1,7699.96
+10,chen_er,chen_er@example.com,1,1339.90

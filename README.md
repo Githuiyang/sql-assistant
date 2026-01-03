@@ -2,9 +2,12 @@
 
 > 让非技术人员也能轻松生成SQL查询语句的开源工具
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Next.js](https://img.shields.io/badge/Next.js-14.2-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-brightgreen)](https://sql-assistant-iota.vercel.app)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-14.2-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue)](https://www.typescriptlang.org/)
+
+**🚀 在线体验**: https://sql-assistant-iota.vercel.app | **📦 GitHub**: https://github.com/Githuiyang/sql-assistant
 
 ## 功能特性
 
@@ -22,7 +25,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-repo/sql-assistant.git
+git clone https://github.com/Githuiyang/sql-assistant.git
 cd sql-assistant
 
 # 启动服务
